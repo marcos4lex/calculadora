@@ -1,7 +1,8 @@
 # calculator-in-C
 
 it's a calculator as an exercise of introduction to the C language.
-When you open it, it'll require you to use 2 values, 
+When you open it, it'll require you to use 2 values,
+
 For example: 
 The first value: 20
 The second: 2
