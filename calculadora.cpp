@@ -3,7 +3,7 @@
 
 int main()
 {
-    int num1, num2, soma, sub, mult, div;
+    int num1, num2, soma, sub, mult, divi;
 
     printf("Calculadora 0.5\n");
     printf("Entre os 2 numeros a serem processados: ");
@@ -12,12 +12,12 @@ int main()
     soma       = num1 + num2;
     sub        = num1 - num2;
     mult       = num1 * num2;
-    div        = num1 / num2;
+    divi       = num1 / num2;
 
     printf( "A soma e: %i\n", soma );
     printf( "A subtracao e: %i\n", sub );
     printf( "A multiplicacao e: %i \n", mult );
-    printf( "A divisao e: %i \n", div );
+    printf( "A divisao e: %i \n", divi );
 
     return 0;
 }
