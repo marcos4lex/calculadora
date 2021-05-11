@@ -18,7 +18,7 @@ int main()
     sub     = num1 - num2;
     mult    = num1 * num2;
     divi    = num1 / num2;
-    resto	= num1 % num2;
+    resto   = num1 % num2;
 
     printf("A soma é: %d\n", soma );
     printf("A subtracao é: %d\n", sub );
