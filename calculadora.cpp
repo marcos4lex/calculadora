@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
 int main()
 {
     int num1, num2, soma, sub, mult, divi;
 
+	setlocale(LC_ALL,"");
     printf("\t\tCalculadora 0.6\n\n");
-    printf("Entre com o primeiro numero a ser processado: ");
+    printf("Entre com o primeiro número a ser processado: ");
     scanf("%d", &num1);	
-    printf("Entre com o segundo numero a ser processado: ");
+    printf("Entre com o segundo número a ser processado: ");
     scanf("%d", &num2);
 
     soma       = num1 + num2;
@@ -16,10 +18,10 @@ int main()
     mult       = num1 * num2;
     divi       = num1 / num2;
 
-    printf( "A soma e: %d\n", soma );
-    printf( "A subtracao e: %d\n", sub );
-    printf( "A multiplicacao e: %d \n", mult );
-    printf( "A divisao e: %d \n", divi );
+    printf( "A soma é: %d\n", soma );
+    printf( "A subtracao é: %d\n", sub );
+    printf( "A multiplicação é: %d \n", mult );
+    printf( "A divisao é: %d \n", divi );
 
-    return 0;
+	return 0;
 }
