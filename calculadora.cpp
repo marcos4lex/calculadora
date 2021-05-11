@@ -6,7 +6,7 @@ int main()
 {
     int num1, num2, soma, sub, mult, divi;
 
-	setlocale(LC_ALL,"");
+    setlocale(LC_ALL,"");
     printf("\t\tCalculadora 0.6\n\n");
     printf("Entre com o primeiro número a ser processado: ");
     scanf("%d", &num1);	
