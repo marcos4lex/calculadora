@@ -4,7 +4,7 @@
 
 int main()
 {
-    int num1, num2, soma, sub, mult, divi, resto;
+    int num1, num2, soma, sub, mult, divi, resto, porce;
     setlocale(LC_ALL,"");
 	
 	
@@ -13,18 +13,21 @@ int main()
     scanf("%d", &num1);	
     printf("Entre com o segundo número a ser processado: ");
     scanf("%d", &num2);
+    
 
-    soma    = num1 + num2;
-    sub     = num1 - num2;
-    mult    = num1 * num2;
-    divi    = num1 / num2;
-    resto   = num1 % num2;
+    soma    =  num1 + num2;
+    sub     =  num1 - num2;
+    mult    =  num1 * num2;
+    divi    =  num1 / num2;
+    resto   =  num1 % num2;
+    porce   = (num1 * num2) /100;
 
     printf("A soma é: %d\n", soma );
     printf("A subtracao é: %d\n", sub );
     printf("A multiplicação é: %d \n", mult );
     printf("A divisao é: %d \n", divi );
     printf("O resto da divisão é: %d \n", resto);
-
+    printf("A porcentagem é: %d \n", porce);
+	
     return 0;
 }
