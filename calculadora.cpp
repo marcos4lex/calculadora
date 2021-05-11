@@ -25,4 +25,6 @@ int main()
     printf("A multiplicação é: %d \n", mult );
     printf("A divisao é: %d \n", divi );
     printf("O resto da divisão é: %d \n", resto);
+
+    return 0;
 }
