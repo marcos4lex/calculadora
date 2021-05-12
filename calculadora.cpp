@@ -62,14 +62,18 @@ int main(){									/* Área destinada ao Menu da calculadora */
 			break;
  
 		case 4:
-			printf ("A operação escolhida foi DIVISAO!\n");
-			printf ("Insira o primeiro número:\n");
-			scanf ("%d", &num1);
-			printf ("Insira o segundo número:\n");
-			scanf ("%d", &num2);
-			resultado = divisao (num1, num2);
-			printf ("O resultado da operação é: %d\n", resultado);
-			break;
+  			printf ("A operação escolhida foi DIVISAO!\n");
+  			printf ("Insira o primeiro número:\n");
+  			scanf ("%d", &num1);
+  			printf ("Insira o segundo número:\n");
+  			scanf ("%d", &num2);
+  
+  			if ( num1 == 0 || num2 == 0) {
+      			printf ("Não tem como dividir por zero né champz!!");}
+			else {
+    			resultado = divisao (num1, num2);
+    			printf ("O resultado da operação é: %d\n", resultado);}
+  			break;
 		
 		case 5: 
 			printf ("A operação escolhida foi RESTO DA DIVISÃO!\n");
@@ -131,11 +135,8 @@ int multiplicacao (int mult1, int mult2){					/* Área destinada a multiplicaç�
 }
 int divisao (int div1, int div2){						/* Área destinada a divisão */
 	int resultado;
-	if ( div1 == 0 || div2 == 0) {
-	printf ("Não tem como dividir por zero né champz!!");
-	} else {
 	resultado = div1 / div2; 
-	return (resultado);}
+	return (resultado);
 }
 int restdiv (int restdiv1, int restdiv2){					/* Área destinada a Resto da Divisão */
 	int resultado;
