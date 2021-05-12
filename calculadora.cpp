@@ -3,54 +3,16 @@
 #include <conio.h>
 #include <locale.h>
 
-int soma (int soma1, int soma2) {						/* Área destinada a soma */
-	int resultado;
-	resultado = soma1 + soma2;
-	return (resultado); 
-}
-int subtracao (int sub1, int sub2){						/* Área destinada a subtração */
-	int resultado;
-	resultado = sub1 - sub2;
-	return (resultado);
-}
-int multiplicacao (int mult1, int mult2){					/* Área destinada a multiplicação */
-	int resultado;
-	resultado = mult1 * mult2;
-	return (resultado);
-}
-int divisao (int div1, int div2){						/* Área destinada a divisão */
-	int resultado;
-	if (div1==0 && div2==0) {
-	printf ("Não tem como dividir por zero né champz!!");
-	} else {
-		resultado = div1 / div2; }
-	return (resultado);
-}
-int restdiv (int restdiv1, int restdiv2){					/* Área destinada a Resto da Divisão */
-	int resultado;
-	resultado = restdiv1 % restdiv2;
-	return (resultado);
-}
-int fatorial (int numfat){							/* Área destinada a Fatorial */
-	int resultado, fat;
-	resultado = 1;
-	for (fat=1;fat<=numfat;fat++)
-	return (resultado);
-}
-int potencia (int base, int expoente){						/* Área destinada a Potenciação */
-	int resultado;
-	if (expoente == 0)
-	return 1;
-	else if (expoente == 1)
-	return base;
-	return resultado = base * potencia (base, expoente-1);
-}
-int porcent (int porc1, int porc2){						/* Área destinada a Porcentagem */
-	int resultado;
-	resultado = (porc1 * porc2) / 100;
-	return (resultado);
-}
-int main(){									/* Área destinada ao Menu da calculadora */
+int soma (int soma1, int soma2);
+int subtracao (int sub1, int sub2);
+int multiplicacao (int mult1, int mult2);
+int divisao (int div1, int div2);
+int restdiv (int restdiv1, int restdiv2);
+int fatorial (int numfat);
+int potencia (int base, int expoente);
+int porcent (int porc1, int porc2);
+
+int main(){										/* Área destinada ao Menu da calculadora */
 	int opcoes, num1, num2, numfato, bas, expo, resultado; 
 	setlocale(LC_ALL, "");
 	
@@ -68,7 +30,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 	printf ("\nEscolha a operação a ser realizada:\n");
 	scanf  ("%d", &opcoes);
 	
-	switch (opcoes){							/* Onde a mágica acontece */
+	switch (opcoes){								/* Onde a mágica acontece */
 		case 1: 
 			printf ("A operação escolhida foi ADIÇÃO!\n");
 			printf ("Insira o primeiro número:\n");
@@ -150,4 +112,52 @@ int main(){									/* Área destinada ao Menu da calculadora */
 		default:
 			printf ("É PRA ESCOLHER UM NUMERO ENTRE 1 E 8 CHAMPZ! :/\n");
 	}
+}
+
+int soma (int soma1, int soma2) {							/* Área destinada a soma */
+	int resultado;
+	resultado = soma1 + soma2;
+	return (resultado); 
+}
+int subtracao (int sub1, int sub2){							/* Área destinada a subtração */
+	int resultado;
+	resultado = sub1 - sub2;
+	return (resultado);
+}
+int multiplicacao (int mult1, int mult2){						/* Área destinada a multiplicação */
+	int resultado;
+	resultado = mult1 * mult2;
+	return (resultado);
+}
+int divisao (int div1, int div2){							/* Área destinada a divisão */
+	int resultado;
+	if (div1==0 && div2==0) {
+	printf ("Não tem como dividir por zero né champz!!");
+	} else {
+		resultado = div1 / div2; }
+		return (resultado);
+}
+int restdiv (int restdiv1, int restdiv2){						/* Área destinada a Resto da Divisão */
+	int resultado;
+	resultado = restdiv1 % restdiv2;
+	return (resultado);
+}
+int fatorial (int numfat){								/* Área destinada a Fatorial */
+	int resultado, fat;
+	resultado = 1;
+	for (fat=1;fat<=numfat;fat++)
+	return (resultado);
+}
+int potencia (int base, int expoente){							/* Área destinada a Potenciação */
+	int resultado;
+	if (expoente == 0)
+	return 1;
+	else if (expoente == 1)
+	return base;
+	return resultado = base * potencia (base, expoente-1);
+}
+int porcent (int porc1, int porc2){							/* Área destinada a Porcentagem */
+	int resultado;
+	resultado = (porc1 * porc2) / 100;
+	return (resultado);
 }
