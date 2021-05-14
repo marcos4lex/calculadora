@@ -26,7 +26,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 	printf ("3 - Multiplicação (*)\n");
 	printf ("4 - Divisão (/)\n");
 	printf ("5 - Resto da divisão (%%)\n");
-	printf ("6 - Fatoral (!)\n");
+	printf ("6 - Fatorial (!)\n");
 	printf ("7 - Potenciação (^)\n");
 	printf ("8 - Porcentagem (%%)");
 	printf ("\nEscolha a operação a ser realizada:\n");
