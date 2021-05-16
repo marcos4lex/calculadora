@@ -35,6 +35,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 		printf ("9 - TABUADA DE 1 A 10");
 		printf ("\nEscolha a operação a ser realizada: ");
 		scanf  ("%d", &opcoes);
+		printf("\n_______________________________\n\n");
 	
 		switch (opcoes){							/* Onde a mágica acontece */
 			case 1: 
@@ -157,6 +158,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 				printf ("\n\t\t\tÉ PRA ESCOLHER UM NUMERO ENTRE 1 E 9 CHAMPZ! '-'\n");
 			}	
 		}
+	printf("\n_______________________________\n\n");
 }
 
 float soma (float soma1, float soma2) {						/* Área destinada a soma */
