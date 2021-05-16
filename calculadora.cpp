@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <locale.h>
+#include <math.h>
 
 float soma(float soma1, float soma2);
 float subtracao(float sub1, float sub2);
@@ -21,53 +22,55 @@ int main(){									/* Área destinada ao Menu da calculadora */
 	printf ("\t\t\t\tSeja bem vindo a calculadora do Marcos!\n\n");
 	printf ("\tA definição de insanidade é fazer a mesma coisa repetidamente e esperar resultados diferentes. \n\t\t\t\t\t- Albert Einstein\n");
 	
-	printf ("\n1 - Adição (+)\n");
-	printf ("2 - Subtração (-)\n");
-	printf ("3 - Multiplicação (*)\n");
-	printf ("4 - Divisão (/)\n");
-	printf ("5 - Resto da divisão (%%)\n");
-	printf ("6 - Fatorial (!)\n");
-	printf ("7 - Potenciação (^)\n");
-	printf ("8 - Porcentagem (%%)");
-	printf ("\nEscolha a operação a ser realizada:\n");
-	scanf  ("%d", &opcoes);
+	while (opcoes < 1 || opcoes > 8 ) {
+		
+		printf ("\n1 - Adição (+)\n");
+		printf ("2 - Subtração (-)\n");
+		printf ("3 - Multiplicação (*)\n");
+		printf ("4 - Divisão (/)\n");
+		printf ("5 - Resto da divisão (%%)\n");
+		printf ("6 - Fatorial (!)\n");
+		printf ("7 - Potenciação (^)\n");
+		printf ("8 - Porcentagem (%%)");
+		printf ("\nEscolha a operação a ser realizada: ");
+		scanf  ("%d", &opcoes);
 	
-	switch (opcoes){							/* Onde a mágica acontece */
-		case 1: 
-			printf ("A operação escolhida foi ADIÇÃO!\n");
-			printf ("Insira o primeiro número:\n");
+		switch (opcoes){							/* Onde a mágica acontece */
+			case 1: 
+			printf ("\nA operação escolhida foi ADIÇÃO!\n");
+			printf ("Insira o primeiro número: ");
 			scanf ("%f", &num1);
-			printf ("Insira o segundo número:\n");
+			printf ("Insira o segundo número: ");
 			scanf ("%f", &num2);
 			resultado = soma (num1, num2);
 			printf ("O resultado da operação é: %0.2f\n", resultado);
 			break;
  
-		case 2:
-			printf ("A operação escolhida foi SUBTRAÇÃO!\n");
-			printf ("Insira o primeiro número:\n");
+			case 2:
+			printf ("\nA operação escolhida foi SUBTRAÇÃO!\n");
+			printf ("Insira o primeiro número: ");
 			scanf ("%f", &num1);
-			printf ("Insira o segundo número:\n");
+			printf ("Insira o segundo número: ");
 			scanf ("%f", &num2);
 			resultado = subtracao (num1, num2);
 			printf ("O resultado da operação é: %0.2f\n", resultado);
 			break;
  
-		case 3:
-			printf ("A operacao escolhida foi MULTIPLICAÇÃO!\n");
-			printf ("Insira o primeiro número:\n");
+			case 3:
+			printf ("\nA operacao escolhida foi MULTIPLICAÇÃO!\n");
+			printf ("Insira o primeiro número: ");
 			scanf ("%f", &num1);
-			printf ("Insira o segundo número:\n");
+			printf ("Insira o segundo número: ");
 			scanf ("%f", &num2);
 			resultado = multiplicacao (num1, num2);
 			printf ("O resultado da operação é: %0.2f\n", resultado);
 			break;
 			
-		case 4:
-  			printf ("A operação escolhida foi DIVISAO!\n");
-  			printf ("Insira o primeiro número:\n");
+			case 4:
+  			printf ("\nA operação escolhida foi DIVISAO!\n");
+  			printf ("Insira o primeiro número: ");
   			scanf ("%f", &num1);
-  			printf ("Insira o segundo número:\n");
+  			printf ("Insira o segundo número: ");
   			scanf ("%f", &num2);
   
   			if ( num1 == 0 || num2 == 0) {
@@ -77,47 +80,48 @@ int main(){									/* Área destinada ao Menu da calculadora */
     			printf ("O resultado da operação é: %0.2f\n", resultado);}
   			break;
   			
-  		case 5: 
-			printf ("A operação escolhida foi RESTO DA DIVISÃO!\n");
-			printf ("Insira o primeiro número:\n");
+  			case 5: 
+			printf ("\nA operação escolhida foi RESTO DA DIVISÃO!\n");
+			printf ("Insira o primeiro número: ");
 			scanf ("%f", &num1);
-			printf ("Insira o segundo número:\n");
+			printf ("Insira o segundo número: ");
 			scanf ("%f", &num2);
 			resultado = restdiv (num1, num2);
 			printf ("O resultado da operação é: %0.2f\n", resultado);
 			break;
 			
-		case 6:
-			printf ("A operação escolhida foi FATORIAL!\n");
-			printf ("Insira o número a ter sua fatorial calculada:\n");
+			case 6:
+			printf ("\nA operação escolhida foi FATORIAL!\n");
+			printf ("Insira o número a ter sua fatorial calculada: ");
 			scanf("%f", &numfato);
 			resultado = fatorial (numfato);
 			printf ("O resultado da operação é: %0.2f\n", resultado);
 			break;
 		
-		case 7:
-			printf ("A operacao escolhida foi POTENCIAÇÃO!\n");
-			printf ("Insira a base:\n");
+			case 7:
+			printf ("\nA operacao escolhida foi POTENCIAÇÃO!\n");
+			printf ("Insira a base: ");
 			scanf ("%f", &bas);
-			printf ("Insira o expoente:\n");
+			printf ("Insira o expoente: ");
 			scanf ("%f", &expo);
 			resultado = potencia (bas, expo);
 			printf("O resultado da operação é: %.2f\n", resultado);
 			break;
 			
-		case 8:
-			printf ("A operação escolhida foi PORCENTAGEM!\n");
-			printf ("Insira o primeiro valor:\n");
+			case 8:
+			printf ("\nA operação escolhida foi PORCENTAGEM!\n");
+			printf ("Insira o primeiro valor: ");
 			scanf ("%f", &num1);
-			printf ("Insira o segundo valor:\n");
+			printf ("Insira o segundo valor: ");
 			scanf ("%f", &num2);
 			resultado = porcent (num1, num2);
 			printf("O resultado da operação é: %0.2f\n", resultado);
 			break;
  
-		default:
-			printf ("É PRA ESCOLHER UM NUMERO ENTRE 1 E 8 CHAMPZ! :/\n");
-	}
+			default:
+				printf ("\n\t\t\tÉ PRA ESCOLHER UM NUMERO ENTRE 1 E 8 CHAMPZ! '-'\n");
+			}	
+		}
 }
 
 float soma (float soma1, float soma2) {						/* Área destinada a soma */
