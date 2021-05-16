@@ -22,7 +22,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 	printf ("\t\t\t\tSeja bem vindo a calculadora do Marcos!\n\n");
 	printf ("\tA definição de insanidade é fazer a mesma coisa repetidamente e esperar resultados diferentes. \n\t\t\t\t\t- Albert Einstein\n");
 	
-	while (opcoes < 1 || opcoes > 10 ) {
+	while (opcoes < 1 || opcoes > 9 ) {
 		
 		printf ("\n1 - Adição (+)\n");
 		printf ("2 - Subtração (-)\n");
