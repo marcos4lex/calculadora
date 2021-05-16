@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <locale.h>
-#include <math.h>
 
 float soma(float soma1, float soma2);
 float subtracao(float sub1, float sub2);
