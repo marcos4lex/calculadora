@@ -10,6 +10,9 @@ int restdiv(int restdiv1, int restdiv2);
 float fatorial (float numfat);
 float potencia(float base, int expoente);
 float porcent (float porc1, float porc2);
+void quebraLinha();
+void espacamento();
+
 
 int main(){									/* Área destinada ao Menu da calculadora */
 
@@ -36,7 +39,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 			printf ("9 - TABUADA DE 1 A 10");
 			printf ("\nEscolha a operação a ser realizada: ");
 			scanf  ("%d", &opcoes);
-			printf("\n_______________________________\n\n");
+			void espacamento();
 	
 			switch (opcoes){							/* Onde a mágica acontece */
 				case 1: 
@@ -126,31 +129,31 @@ int main(){									/* Área destinada ao Menu da calculadora */
 
  				for (um = 1; um <= 10; um++){
  					printf("\n 1 x %d = %d", um, 1 * um);} 
- 					printf("\n");	
+ 					void quebraLinha();
  				for (dois = 1; dois <= 10; dois++){
  					printf("\n 2 x %d = %d", dois, 2 * dois);} 	
-					printf("\n");	 			
+					void quebraLinha();	 			
  				for (tres = 1; tres <= 10; tres++) {
  					printf("\n 3 x %d = %d", tres, 3 * tres);}
- 					printf("\n");	
+ 					void quebraLinha();	
  				for (quatro = 1; quatro <= 10; quatro++) {
  					printf("\n 4 x %d = %d", quatro, 4 * quatro); }
- 					printf("\n");	
+ 					void quebraLinha();	
  				for (cinco = 1; cinco <= 10; cinco++) {
  					printf("\n 5 x %d = %d", cinco, 5 * cinco);	} 	
-					printf("\n");	 				
+					void quebraLinha();	 				
  				for (seis = 1; seis <= 10; seis++) {
  					printf("\n 6 x %d = %d", seis, 6 * seis); }
- 					printf("\n");	
+ 					void quebraLinha();	
  				for (sete = 1; sete <= 10; sete++) {
  					printf("\n 7 x %d = %d", sete, 7 * sete);}
- 					printf("\n");	
+ 					void quebraLinha();	
  				for (oito = 1; oito <= 10; oito++) {
  					printf("\n 8 x %d = %d", oito, 8 * oito); }
- 					printf("\n");	
+ 					void quebraLinha();	
  				for (nove = 1; nove <= 10; nove++) {
  					printf("\n 9 x %d = %d", nove, 9 * nove); }
- 					printf("\n");	
+ 					void quebraLinha();	
  				for (dez = 1; dez <= 10; dez++) {
  					printf("\n 10 x %d = %d", dez, 10 * dez); }
  					break;	
@@ -158,7 +161,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 				default:
 					printf ("\n\t\t\tÉ PRA ESCOLHER UM NUMERO ENTRE 1 E 9 CHAMPZ! '-'\n");
 			}	
-		printf("\n_______________________________\n\n");
+		void espacamento();
     	printf("\nDeseja calcular novamente? Digite s ou n\n");
     	scanf("%s", &fazerNovamente);
     	fflush(stdin);
@@ -211,4 +214,11 @@ float porcent (float porc1, float porc2){						/* Área destinada a Porcentagem 
 	float resultado;
 	resultado = (porc1 * porc2) / 100;
 	return (resultado);
+}
+
+void quebraLinha(){
+	printf("\n");
+}
+void espacamento(){
+	printf("\n_______________________________\n\n");
 }
