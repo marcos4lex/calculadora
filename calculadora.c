@@ -14,7 +14,8 @@ void quebraLinha();
 void espacamento();
 
 
-int main(){									/* Área destinada ao Menu da calculadora */
+// Menu da calculadora
+int main(){									
 
 	float resultado, num1, num2, numfato, bas, expo;
 	int um, dois, tres, quatro, cinco, seis, sete, oito, nove, dez;
@@ -41,7 +42,8 @@ int main(){									/* Área destinada ao Menu da calculadora */
 			scanf  ("%d", &opcoes);
 			void espacamento();
 	
-			switch (opcoes){							/* Onde a mágica acontece */
+	
+			switch (opcoes){							
 				case 1: 
 					printf ("\nA operação escolhida foi ADIÇÃO!\n");
 					printf ("Insira o primeiro número: ");
@@ -170,39 +172,39 @@ int main(){									/* Área destinada ao Menu da calculadora */
 
 }	
 
-
-float soma (float soma1, float soma2) {						/* Área destinada a soma */
+// Área onde é feito os cálculos
+float soma (float soma1, float soma2) {						
 	float resultado;
 	resultado = soma1 + soma2;
 	return resultado; 
 }
-float subtracao (float sub1, float sub2){						/* Área destinada a subtração */
+float subtracao (float sub1, float sub2){
 	float resultado;
 	resultado = sub1 - sub2;
 	return resultado;
 }
-float multiplicacao (float mult1, float mult2){					/* Área destinada a multiplicação */
+float multiplicacao (float mult1, float mult2){	
 	float resultado;
 	resultado = mult1 * mult2;
 	return resultado;
 }
-float divisao (float div1, float div2){						/* Área destinada a divisão */
+float divisao (float div1, float div2){
 	float resultado;
 	resultado = div1 / div2; 
 	return (resultado);
 }
-int restdiv (int restdiv1, int restdiv2){					/* Área destinada a Resto da Divisão */
+int restdiv (int restdiv1, int restdiv2){
 	int resultado;
 	resultado = restdiv1 % restdiv2;
 	return (resultado);
 }
-float fatorial (float numfat){							/* Área destinada a Fatorial */
+float fatorial (float numfat){
 	float resultado, fat;
 	resultado = 1;
 	for (fat=1;fat<=numfat;fat++)
 	return (resultado);
 }
-float potencia (float base, int expoente){						/* Área destinada a Potenciação */
+float potencia (float base, int expoente){
 	float resultado;
 	if (expoente == 0)
 	return 1;
@@ -210,12 +212,13 @@ float potencia (float base, int expoente){						/* Área destinada a Potenciaç�
 	return base;
 	return resultado = base * potencia (base, expoente-1);
 }
-float porcent (float porc1, float porc2){						/* Área destinada a Porcentagem */
+float porcent (float porc1, float porc2){
 	float resultado;
 	resultado = (porc1 * porc2) / 100;
 	return (resultado);
 }
 
+// Pequenas funções auxiliares
 void quebraLinha(){
 	printf("\n");
 }
