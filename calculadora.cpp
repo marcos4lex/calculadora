@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 #include <locale.h>
 
 float soma(float soma1, float soma2);
@@ -69,7 +68,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 				scanf ("%f", &num2);
 				resultado = multiplicacao (num1, num2);
 				printf ("O resultado da operação é: %0.2f\n", resultado);
-			break;
+				break;
 			
 			case 4:
   				printf ("\nA operação escolhida foi DIVISAO!\n");
@@ -121,7 +120,7 @@ int main(){									/* Área destinada ao Menu da calculadora */
 				scanf ("%f", &num2);
 				resultado = porcent (num1, num2);
 				printf("O resultado da operação é: %0.2f\n", resultado);
-			break;
+				break;
 			
 			case 9:
 				printf("\n\t\t\t\t\t A opção escolhida foi TABUADA!\n");
