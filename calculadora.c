@@ -163,7 +163,7 @@ int main(){
 				default:
 					printf ("\n\t\t\tÉ PRA ESCOLHER UM NUMERO ENTRE 1 E 9 CHAMPZ! '-'\n");
 			}	
-		void espacamento();
+	void espacamento();
     	printf("\nDeseja calcular novamente? Digite s ou n\n");
     	scanf("%s", &fazerNovamente);
     	fflush(stdin);
