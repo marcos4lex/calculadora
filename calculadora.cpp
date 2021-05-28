@@ -82,11 +82,11 @@ int main(){
   					printf ("Insira o segundo número: ");
   					scanf ("%f", &num2);
 	
-  				if ( num1 == 0 || num2 == 0) {
-   	   				printf ("Não tem como dividir por zero né champz!!");}
-				else {
-    				resultado = divisao (num1, num2);
-    				printf ("O resultado da divisão é: %0.2f. <--\n", resultado);}
+  					if ( num1 == 0 || num2 == 0) {
+   	   					printf ("Não tem como dividir por zero né champz!!");}
+					else {
+    						resultado = divisao (num1, num2);
+    						printf ("O resultado da divisão é: %0.2f. <--\n", resultado);}
   					break;
   			
   				case 5: 
@@ -166,7 +166,7 @@ int main(){
 				default:
 					printf ("\n\t\t\tÉ PRA ESCOLHER UM NUMERO ENTRE 1 E 9 CHAMPZ! '-'\n");
 			}	
-		barra();
+	barra();
     	printf("\nDeseja calcular novamente? Digite s ou n\n");
     	scanf("%s", &fazerNovamente);
     	fflush(stdin);
