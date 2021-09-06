@@ -6,10 +6,11 @@ e digitar o número correspondente a ela. A seguir você deverá inserir os dois
 
 Por exemplo: 
 
-1 - adição (+)
-A seguir insira o primeiro número: 25
-Agora insira o segundo número: 4
-O resultado da operação é: 29
+1 - adição (+)<br>
+
+A seguir insira o primeiro número: 25<br>
+Agora insira o segundo número: 4<br>
+O resultado da operação é: 29<br>
 
 Obs: A calculadora aceita números reais. MENOS, é claro, que o que você tenha que inserir seja o expoente 
 se um calculo que envolva potenciação.
