@@ -16,4 +16,4 @@ Como eu disse anteriormente, essa não será a versão final da calculadora. E c
 
 <h2>Links</h2>
 
-Teste a calculadora você mesmo, <a href="https://replit.com/@marcos4lex/calculadora#main.c" target="_blank">Clique aqui</a>
+<a href="https://replit.com/@marcos4lex/calculadora#main.c" target="_blank">Clique aqui</a> e teste a calculadora você mesmo.
