@@ -14,6 +14,9 @@ O resultado da operação é: 29<br>
 Obs: A calculadora aceita números reais. MENOS, é claro, que o que você tenha que inserir seja o expoente se um calculo envolva potenciação.
 Como eu disse anteriormente, essa não será a versão final da calculadora. E conforme o passar do curso e eu vá aprendendo coisas novas, eu quero adicioná-las aqui.
 
-<h2>Links</h2>
+<h2>Teste você mesmo</h2>
 
 <a href="https://replit.com/@marcos4lex/calculadora#main.c" target="_blank">Clique aqui</a> e teste a calculadora você mesmo.
+Quando você for redirecionado para o link acima, você irá se deparar com essa tela:
+<img src="/img/howto1.png" width="500"><br>
+Basta clicar no botão grande e verde no topo direito da imagem para testar.
