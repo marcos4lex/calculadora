@@ -12,8 +12,8 @@ Agora insira o segundo número: 4<br>
 O resultado da operação é: 29<br>
 
 Obs: A calculadora aceita números reais. MENOS, é claro, que o que você tenha que inserir seja o expoente se um calculo envolva potenciação.
-
-
 Como eu disse anteriormente, essa não será a versão final da calculadora. E conforme o passar do curso e eu vá aprendendo coisas novas, eu quero adicioná-las aqui.
 
-Caso queira testar a calculadora, <a href="https://replit.com/@marcos4lex/calculadora#main.c" target="_blank">Clique aqui</a>
+<h2>Links</h2>
+
+Teste a calculadora você mesmo, <a href="https://replit.com/@marcos4lex/calculadora#main.c" target="_blank">Clique aqui</a>
